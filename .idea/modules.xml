@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BuildSrc/BuildSrc.iml" filepath="$PROJECT_DIR$/BuildSrc/BuildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyHotfix.iml" filepath="$PROJECT_DIR$/MyHotfix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Study-Hotfix/Study-Hotfix.iml" filepath="$PROJECT_DIR$/Study-Hotfix/Study-Hotfix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hack/hack.iml" filepath="$PROJECT_DIR$/hack/hack.iml" />
+    </modules>
+  </component>
+</project>

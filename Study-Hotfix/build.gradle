@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+apply plugin: Register
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+
+    defaultConfig {
+        applicationId "xuanli.hbdx.xj.tvjoy.cn.study_hotfix"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    /*applicationVariants.all { variant->
+        def dexTask = project.tasks.findByName("transformClassesWithDexForDebug")
+        def preDexTask = project.tasks.findByName("transformClassesWithPreDexForDebug")
+        if(preDexTask) {
+            project.logger.error "======preDexTask======"
+            preDexTask.inputs.files.files.each {file ->
+                project.logger.error "inputs =$file.absolutePath"
+            }
+
+            preDexTask.outputs.files.files.each {file ->
+                project.logger.error "outputs =$file.absolutePath"
+            }
+        }
+        if(dexTask) {
+            project.logger.error "======dexTask======"
+            dexTask.inputs.files.files.each {file ->
+                project.logger.error "inputs =$file.absolutePath"
+            }
+
+            dexTask.outputs.files.files.each {file ->
+                project.logger.error "outputs =$file.absolutePath"
+            }
+        }
+    }*/
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.squareup.okhttp3:okhttp:3.8.1'
+    compile 'com.alibaba:fastjson:1.2.38'
+}

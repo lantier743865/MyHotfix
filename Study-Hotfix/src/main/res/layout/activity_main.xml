@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xuanli.hbdx.xj.tvjoy.cn.study_hotfix.acitivty.MainActivity">
+
+    <Button
+        android:id="@+id/bt_hotfix_bug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查看People信息"
+        android:onClick="hotFixBug"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/bt_jumpto_activity2"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/bt_jumpto_activity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转Activity2"
+        android:onClick="jumpToA2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
